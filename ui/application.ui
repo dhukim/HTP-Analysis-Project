@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1093</width>
+    <height>903</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1091</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLineEdit" name="HousePictureLinker">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="HousePictureInputBtn">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>집 그림 입력</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="TreePictureLinker">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="TreePictureInputBtn">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>나무 그림 입력</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="PersonPictureLinker">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="PersonPictureInputBtn">
+        <property name="minimumSize">
+         <size>
+          <width>90</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>사람 그림 입력</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ResultPrint">
+      <property name="text">
+       <string>결과 출력</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>160</y>
+     <width>1091</width>
+     <height>741</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QTextEdit" name="ResultWindow"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QColumnView" name="columnView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>HousePictureLinker</tabstop>
+  <tabstop>HousePictureInputBtn</tabstop>
+  <tabstop>TreePictureInputBtn</tabstop>
+  <tabstop>TreePictureLinker</tabstop>
+  <tabstop>PersonPictureLinker</tabstop>
+  <tabstop>PersonPictureInputBtn</tabstop>
+  <tabstop>ResultWindow</tabstop>
+  <tabstop>columnView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>HousePictureInputBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>fileopen1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1046</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1096</x>
+     <y>528</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TreePictureInputBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>fileopen2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1025</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1110</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PersonPictureInputBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>fileopen3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1065</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1111</x>
+     <y>360</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResultPrint</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>result()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>541</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1154</x>
+     <y>382</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>fileopen1()</slot>
+  <slot>fileopen2()</slot>
+  <slot>fileopen3()</slot>
+  <slot>result()</slot>
+ </slots>
+</ui>
